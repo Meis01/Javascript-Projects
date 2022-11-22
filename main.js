@@ -72,19 +72,13 @@ loadmore.addEventListener('click',async (e) => {
   i = i+1;
       const response = await fetch(`https://www.wp-course.site/wp-json/youthink/posts?page=${i}`)
       let  data = await response.json();
+      console.log(data)
     apiThinkGalery.push(...data.data);
     console.log(apiThinkGalery);
-    const elementList = [...document.querySelectorAll('.posts')] ;
-    console.log(elementList);
-    for (let j = 1; j < 6; j++) {
-        if (elementList[j]) {
-            
-            elementList[j].style.display = 'block';
-        }
-    }
+  
     displayPosts(apiThinkGalery);
     //  hide after list fully loaded
-    if (i > 4) {
+    if (apiThinkGalery.length == data.meta.total_posts) {
         e.target.style.display = 'none';
    } 
 });
