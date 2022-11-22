@@ -1,0 +1,143 @@
+.right-part {
+    justify-content: right;
+    
+
+}
+.right-part a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 0 0.5em;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.right-part a:hover{color: #fff;}
+.left-part{
+    display: flex;
+    justify-content: space-between;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+   
+}
+.section-list{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 55px 0 25px;
+    font-size: 18px;
+}
+.section-list ul{
+    list-style: none;
+    padding: 2px 0;
+}
+.subscribe{
+    padding: 50px;
+   
+}
+.subscribe >h2{
+    line-height: 75px;
+}
+.subscribe >p{
+    line-height: 30px;
+}
+.input-btn{
+    background-color: #05a5ea;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+ 
+}
+.input-email{
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 0 5px 0 0;
+    padding: 5px;
+}
+.footer>p {
+    margin: 20px 0 10px;
+    padding: 0 0 0 35px;
+}
+.blog >h1{
+background-color: #f6f4f4;
+font-size: 2em;
+padding: 25px;
+}
+.blog>.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.img-style{
+    width: 75%;
+}
+.posts>.post-info {
+    align-items: center;
+    
+    text-align: center;
+    position: relative;
+    top: -45px;
+    left: 100px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #fff!important;
+    border-radius: 10px;
+
+    padding: 25px 5px 25px 5px;
+    height: auto;
+    font-size: 18px ;
+    z-index: 0;
+    }
+    .posts>.post-info>h3 {
+        padding: 5px;
+        margin: 5px 10px ;
+    }
+    .btn-style {
+        margin-left: 50%;
+        background-color: #05a5ea;
+        border: none;
+        border-radius: 0.5em;
+        color: #fff;
+        cursor: pointer;
+        padding: 1em 2em;
+    }
+    /* Stye for single Post */
+    .single-post {
+        align-items: center;
+        
+        text-align: center;
+        position: relative;
+        top: -45px;
+        left: 100px;
+        width: 50%;
+        border-radius: 20px;
+        background-color: #fff!important;
+        border-radius: 10px;
+    
+        padding: 25px 5px 25px 5px;
+        height: auto;
+        font-size: 18px ;
+        z-index: 0;
+        }
+        .single-post {
+            padding: 5px;
+            margin: 5px 10px ;
+        }
+@media only screen and (max-width: 960px){
+    .blog>.container>.posts {
+        width: 100%;
+    }
+}
+
+
